@@ -6,6 +6,10 @@ This folder is home. Treat it that way.
 
 If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
 
+## Session End
+
+When the session is closing, run `WRAP.md`. It handles the daily log, memory updates, and anything worth flagging. Two modes: auto (just do it) or review (show draft first). The trigger phrase tells you which.
+
 ---
 
 ## Session Startup
@@ -119,6 +123,7 @@ memory/topics/   Recurring subjects and research
 context/         Scratch work for this session only — temporary
 skills/          Reference skills — load on demand only
 Outputs/         Finished work goes here
+WRAP.md          Session-end ritual — run when closing out
 ```
 
 ---
