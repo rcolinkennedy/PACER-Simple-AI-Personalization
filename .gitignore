@@ -1,0 +1,58 @@
+# =============================================================
+# PACER — Personal data is never committed.
+# The folders below exist locally but are excluded from git.
+# Clone this repo to get the structure; fill in your own data.
+# =============================================================
+
+# Personal profile and preferences
+user/*
+!user/.gitkeep
+
+# Persistent memory
+memory/*
+!memory/.gitkeep
+memory/projects/*
+!memory/projects/.gitkeep
+memory/people/*
+!memory/people/.gitkeep
+memory/topics/*
+!memory/topics/.gitkeep
+memory/daily/*
+!memory/daily/.gitkeep
+
+# Active project context
+context/*
+!context/.gitkeep
+
+# Work outputs
+Outputs/*
+!Outputs/.gitkeep
+
+# Skills — SKILL.md files may contain personalized content over time.
+# The README.md index is committed so cloners know what to install.
+skills/**/SKILL.md
+skills/**/references/
+
+# =============================================================
+# System / OS noise
+# =============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE
+.vscode/
+.cursor/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# Node
+node_modules/
