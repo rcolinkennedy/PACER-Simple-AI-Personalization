@@ -15,3 +15,4 @@ Each skill is a self-contained `SKILL.md` that an AI agent can load on demand. L
 | `bdi-mental-states/` | Modeling user beliefs, desires, and intentions formally |
 | `context-optimization/` | Reducing token costs or extending effective context capacity |
 | `tool-design/` | Designing, auditing, or debugging agent tools and MCP tool collections |
+| `project-development/` | Starting an LLM project, designing batch pipelines, evaluating task-model fit, or structuring agent-assisted development |
