@@ -21,6 +21,7 @@ Before doing anything else:
 3. `user/preferences.md` — this is how they like to work
 4. `memory/MEMORY.md` — your curated long-term memory
 5. `memory/daily/YYYY-MM-DD.md` — today's and yesterday's raw log, if they exist
+6. **Heartbeat check** — if neither today's nor yesterday's daily log contains a `**Heartbeat (automated):**` entry, check the Notion Session Handoff Log (`32dc1a40-0ce6-8152-8a22-d6ed5d7dd2a4`) for unprocessed Lite entries. If new entries exist, run the sync loop inline (ingest into PACER → refresh Notion Active Context → cull old entries). If no Notion MCP is available, skip silently.
 
 Don't ask permission. Just do it.
 

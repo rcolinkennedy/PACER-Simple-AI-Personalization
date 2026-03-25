@@ -41,6 +41,8 @@ Review mode is useful when the session covered something nuanced, sensitive, or 
 
 4. **Flag `user/` suggestions** — if anything suggests a `user/` file should be updated (new voice example, changed preference, updated goal), say so. Don't write — propose.
 
+5. **Refresh Notion Active Context** — If PACER state changed this session (project status, decisions, open threads), regenerate the Notion Active Context page (`32dc1a40-0ce6-81c5-ab27-cdda26ae1b2e`) from current PACER state. Skip if nothing material changed. Also ingest any new entries from the Session Handoff Log (`32dc1a40-0ce6-8152-8a22-d6ed5d7dd2a4`) that haven't been processed yet.
+
 ---
 
 ## Review Mode — What to Show
@@ -58,6 +60,9 @@ Present a draft before writing anything. Format it clearly:
 
 **Suggestions for user/ files (if any):**
 > [flag only — no writing without approval]
+
+**Notion Active Context refresh (if PACER state changed):**
+> [yes — regenerating from current state / no — nothing material changed this session]
 
 Then ask: *"Anything to add or change before I save?"*
 

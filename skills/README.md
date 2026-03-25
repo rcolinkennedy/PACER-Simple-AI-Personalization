@@ -14,3 +14,4 @@ Each skill is a self-contained `SKILL.md` that an AI agent can load on demand. L
 | `context-compression/` | Sessions grow long, context needs summarization, or MEMORY.md is getting bloated |
 | `bdi-mental-states/` | Modeling user beliefs, desires, and intentions formally |
 | `context-optimization/` | Reducing token costs or extending effective context capacity |
+| `tool-design/` | Designing, auditing, or debugging agent tools and MCP tool collections |
