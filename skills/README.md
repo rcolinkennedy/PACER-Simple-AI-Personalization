@@ -16,3 +16,6 @@ Each skill is a self-contained `SKILL.md` that an AI agent can load on demand. L
 | `context-optimization/` | Reducing token costs or extending effective context capacity |
 | `tool-design/` | Designing, auditing, or debugging agent tools and MCP tool collections |
 | `project-development/` | Starting an LLM project, designing batch pipelines, evaluating task-model fit, or structuring agent-assisted development |
+| `multi-agent-patterns/` | Designing multi-agent systems, supervisor/swarm/hierarchical patterns, agent handoffs, or context isolation across agents |
+| `evaluation/` | Evaluating agent performance, building test frameworks, creating rubrics, LLM-as-judge, or quality gates for agent pipelines |
+| `context-degradation/` | Diagnosing context failures, lost-in-middle issues, context poisoning, attention degradation, or debugging agent performance drops in long sessions |
