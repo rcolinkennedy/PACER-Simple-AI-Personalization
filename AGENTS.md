@@ -35,6 +35,7 @@ Only pull these when the task actually needs them:
 | `user/voice.md` | Writing anything on behalf of the user |
 | `user/values.md` | Task involves judgment calls, trade-offs, or ethics |
 | `user/goals.md` | Task involves planning, prioritization, or strategy |
+| `memory/glossary.md` | Request contains unfamiliar shorthand, acronyms, or codenames |
 | `memory/people/[name].md` | Task references a specific person or relationship |
 | `memory/projects/[name].md` | Task references a specific project |
 | `memory/topics/[name].md` | Task references a recurring topic |
@@ -65,10 +66,22 @@ Raw capture. Write here during the session. Freeform — whatever happened, deci
 **Long-term memory** — `memory/MEMORY.md`
 Distilled essence. What actually matters across sessions. Keep it under 100 lines. Periodically review recent daily files, pull out what's worth keeping, and update this. Daily files are the journal; this is the wisdom.
 
+### Decoding Shorthand
+
+Colin uses a lot of shorthand. Before acting on any request, decode unfamiliar terms:
+
+1. **MEMORY.md** (always loaded) — hot context covers active projects and standing notes
+2. **memory/glossary.md** — full decoder ring for all acronyms, codenames, nicknames, and internal terms
+3. **memory/people/[name].md** or **memory/projects/[name].md** — rich detail when needed for execution
+4. **Ask Colin** — if still unclear: "What does X mean? I'll remember it."
+
+This path keeps MEMORY.md lean while making the full vocabulary searchable. When Colin says "the Lite heartbeat skipped" or "scope it to S&C," glossary.md resolves it in one lookup.
+
 ### What Goes Where
 
 - `memory/daily/` — raw session logs (short-term, append-only)
 - `memory/MEMORY.md` — curated long-term memory (distilled, always loaded)
+- `memory/glossary.md` — decoder ring: all shorthand, nicknames, acronyms, codenames
 - `memory/projects/` — project decisions and history (not scratch work — use `context/` for that)
 - `memory/people/` — people the user works with
 - `memory/topics/` — recurring subjects and research
