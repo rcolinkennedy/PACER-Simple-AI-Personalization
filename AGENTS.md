@@ -41,6 +41,7 @@ Only pull these when the task actually needs them:
 | `memory/topics/[name].md` | Task references a recurring topic |
 | `context/[project]/` | Active in-session project work |
 | `skills/[name]/SKILL.md` | Task matches the skill's trigger conditions (see `skills/README.md`) |
+| `skills/editing/SKILL.md` | Revision sessions, draft feedback, or any task where Archie acts as editor. Load alongside the appropriate `user/voice-*.md` for the active writing project. |
 
 ---
 
