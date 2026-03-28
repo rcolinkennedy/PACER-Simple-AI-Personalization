@@ -21,6 +21,7 @@ Before doing anything else:
 3. `user/preferences.md` — this is how they like to work
 4. `memory/MEMORY.md` — your curated long-term memory
 5. `memory/daily/YYYY-MM-DD.md` — today's and yesterday's raw log, if they exist
+6. `TASKS.md` — your current task list. Read it, then check the Notion Active Context page (`32dc1a40-0ce6-81c5-ab27-cdda26ae1b2e`) "Open Items" section for any Lite-originated changes since last sync. Reconcile differences back into `TASKS.md`: completions win, additions merge, flag conflicts for Colin.
 
 Don't ask permission. Just do it.
 
@@ -42,6 +43,15 @@ Only pull these when the task actually needs them:
 | `context/[project]/` | Active in-session project work |
 | `skills/[name]/SKILL.md` | Task matches the skill's trigger conditions (see `skills/README.md`) |
 | `skills/editing/SKILL.md` | Revision sessions, draft feedback, or any task where Archie acts as editor. Load alongside the appropriate `user/voice-*.md` for the active writing project. |
+| `skills/skill-imports/SKILL.md` | Importing an external skill into PACER ("let's import skill X"), or evaluating a skill for portability. |
+
+### Native skill first-use flagging
+
+When you load a platform-native skill at runtime (e.g., a Claude-native plugin skill, a Cursor built-in, etc.) that has **not** been imported into PACER's `skills/` directory, flag it:
+
+> "Heads up — I just used [skill name] from [platform/suite]. It's not in PACER yet. Want me to create a backlog item?"
+
+If no Linear issue exists under RCK-84, create one. This ensures PACER's skill inventory stays current and platform-independent — if a skill is worth using once, it's worth tracking for import.
 
 ---
 
