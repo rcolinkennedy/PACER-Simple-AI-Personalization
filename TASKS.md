@@ -13,14 +13,14 @@
 ## Waiting On
 
 - [ ] **RCK-73/74 closure** - handoff log corruption fix validated 2026-03-26, ready for Colin to close in Linear (since 2026-03-26)
-- [ ] **Colin: upload V4 core prompt** - to Claude Project settings (since 2026-03-25)
+
 - [ ] **Rod's Automotive reply** - monitoring Gmail thread `19981ba35188bcbf`, last sent 2025-09-29 (RCK-76, since 2026-03-25)
 
 ## Next Session
 
 - [ ] **Seed Open Items on Active Context** - first Notion sync of this task list so Lite can see it
 - [ ] **Update Lite core prompt** - document how Lite reads/writes Open Items
-- [ ] **Update heartbeat** - add task sync to nightly PACER → Notion push
+- [ ] **Update heartbeat** - add task sync to nightly PACER → Notion push (RCK-139)
 
 ## Someday
 
@@ -33,8 +33,11 @@
 
 ## Done
 
-_(none)_
+- [x] **Rebuild heartbeat SKILL.md** - RCK-152, prompt destroyed by failed RCK-151 attempt, rebuilt from references, verified with manual run (2026-03-31)
+- [x] **Add heartbeat timestamp to Active Context** - RCK-151, Lite can now check heartbeat health via footer timestamp (2026-03-31)
+- [x] **Lite core prompt v4.1** - added heartbeat awareness to Claude Project + Notion Core Prompt + Notion Agent instructions (2026-03-31)
+- [x] **Colin: upload V4 core prompt** - v4.1 uploaded to Claude Project settings (completed 2026-03-31)
 
 ---
 
-**Agent sync:** No separate **Open Items** block on Active Context yet (RCK-99). Open Threads + `TASKS.md` remain the paired sources until that ships. **RCK-13 / Notion:** Active Context updated 2026-03-28 to match `memory/MEMORY.md` (Projects blurb, Recent Context, Open Threads). Vacation Apr 3–13 and publishing April 14+ also live on Active Context Standing Notes and now in `memory/MEMORY.md`.
+**Agent sync:** No separate **Open Items** block on Active Context yet (RCK-99). Open Threads + `TASKS.md` remain the paired sources until that ships. **Last sync:** 2026-03-31 (CoWork session — heartbeat rebuild + RCK-151 + v4.1 prompt deployment).
