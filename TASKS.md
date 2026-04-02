@@ -2,10 +2,8 @@
 
 ## Active
 
-- [ ] **Skill-importing process** - finalize evaluate → adapt → integrate workflow (RCK-117, In Progress)
-- [ ] **Skills sharing model decision** - how PACER skills vs. Claude-native coexist (RCK-26, Urgent)
+- [ ] **Weekly update skill dry run** - run first real weekly update on one project; handoff doc in Outputs/2026-04-02-session-handoff.md (RCK-79 child, post-vacation)
 - [ ] **Task-management Notion sync** - implement WRAP.md + heartbeat + startup sync for Open Items on Active Context (RCK-99)
-- [ ] **Weekly update skill dry run** - run first real weekly update on one project (RCK-79 child)
 - [ ] **Audit Google integrations** - check what's available across CoWork and Claude Web (RCK-112, In Progress)
 - [ ] **Cross-embodiment handoff test** - RCK-52, unblocked after RCK-73/74 validation (from Lite Active Context Open Threads)
 - [ ] **Editing skill wrap-up** - RCK-102 In Progress; remaining RCK-104 (PB voice file), RCK-105 (source style guide) (from Lite Active Context)
@@ -33,6 +31,10 @@
 
 ## Done
 
+- [x] **Skill-importing process** - RCK-117, formalized into `skills/skill-imports/SKILL.md` with access audit step (2026-04-02)
+- [x] **Skills sharing model decision** - RCK-26, platform-independence principle: import everything worth relying on; native skills = discovery channel (2026-04-02)
+- [x] **Task-management skill import** - RCK-99 layered import done. SKILL.md + TASKS.md + WRAP.md + AGENTS.md updated. RCK-137/138/139 filed for remaining Notion-side work (2026-04-02)
+- [x] **Productivity suite Linear structure** - RCK-136 created, RCK-90 + RCK-99 reparented (2026-04-02)
 - [x] **Rebuild heartbeat SKILL.md** - RCK-152, prompt destroyed by failed RCK-151 attempt, rebuilt from references, verified with manual run (2026-03-31)
 - [x] **Add heartbeat timestamp to Active Context** - RCK-151, Lite can now check heartbeat health via footer timestamp (2026-03-31)
 - [x] **Lite core prompt v4.1** - added heartbeat awareness to Claude Project + Notion Core Prompt + Notion Agent instructions (2026-03-31)
@@ -40,4 +42,4 @@
 
 ---
 
-**Agent sync:** No separate **Open Items** block on Active Context yet (RCK-99). Open Threads + `TASKS.md` remain the paired sources until that ships. **Last sync:** 2026-03-31 (CoWork session — heartbeat rebuild + RCK-151 + v4.1 prompt deployment).
+**Agent sync:** No separate **Open Items** block on Active Context yet (RCK-137). Open Threads + `TASKS.md` remain the paired sources until that ships. **Last sync:** 2026-04-02 (CoWork session — task-management import, skill-import process finalized, pre-vacation wrap).
