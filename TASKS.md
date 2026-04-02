@@ -14,7 +14,7 @@
 
 ## Next Session
 
-- [ ] **Validate pacer-heartbeat** - RCK-163 In Progress. First real cycle fires next hour. Check: light context loading, Lite sync, cadence gating, state file updates, HEARTBEAT_OK suppression. Delete old `archimedes-lite-heartbeat` task once confirmed.
+- [ ] **Validate pacer-heartbeat** - RCK-163 In Progress. Runs unattended during vacation (April 3–13). Post-vacation: review daily logs for heartbeat entries, confirm cadence gating, check state file, delete old `archimedes-lite-heartbeat` task.
 - [ ] **Seed Open Items on Active Context** - first Notion sync of this task list so Lite can see it (RCK-137)
 - [ ] **Update Lite core prompt** - document how Lite reads/writes Open Items (RCK-138)
 
@@ -43,4 +43,4 @@
 
 ---
 
-**Agent sync:** No separate **Open Items** block on Active Context yet (RCK-137). Open Threads + `TASKS.md` remain the paired sources until that ships. **Last sync:** 2026-04-02 (CoWork session — PACER Heartbeat System built, RCK-156 sub-issues 157–162 Done, validation pending).
+**Agent sync:** No separate **Open Items** block on Active Context yet (RCK-137). Open Threads + `TASKS.md` remain the paired sources until that ships. **Last sync:** 2026-04-02 (CoWork session — PACER Heartbeat System built + refined, RCK-76 reconciled, pre-vacation wrap).

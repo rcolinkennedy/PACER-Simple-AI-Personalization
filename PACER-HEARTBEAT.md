@@ -66,6 +66,8 @@ No tasks in v1. Output `HEARTBEAT_OK` if no other cadence tiers are due.
 
 **ClickUp** — Check AI-Delegated list (`901319471366`) for new items. Check active project spaces from MEMORY.md (AI Assisted, Product Briefly, Projects) for task status changes.
 
+**Active Context status reconciliation** — Fetch the Notion Active Context page. Find all referenced RCK-## issues and ClickUp task IDs. Query Linear and ClickUp for current status of each. Update any stale statuses in place on the page (weekly plan table, Open Threads, Open Items). Preserve page structure — update status fields only, don't delete or reorder content.
+
 **Daily log check** — Verify `memory/daily/YYYY-MM-DD.md` exists for today. Create if missing.
 
 Log a breakfast summary to the daily file.
