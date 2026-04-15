@@ -12,7 +12,8 @@
 
 ## Next Session
 
-- [ ] **URGENT: Reply to CPA (Victor Szmania + Savanna Salas)** - ESCALATED: Victor emailed Apr 13 requesting W-2s, 1099s (consulting, investment statements) to file extension this week + estimate taxes owed. Prior: Savanna (Apr 7) needs confirmation re: Squarespace 2025 revenue. Thread: "Re: Request for 2025 Revenue" (threadId 19bd86c9662f7bde). Both messages unanswered — respond TODAY.
+- [ ] **URGENT: Send tax docs to CPA (Victor Szmania + Savanna Salas)** - Colin replied Apr 13 ("will work on this first thing tomorrow") but substantive action still pending: gather and send W-2s, 1099s, consulting/investment statements so Victor can file extension + estimate taxes. Savanna still needs Squarespace 2025 revenue confirmation. Thread: "Re: Request for 2025 Revenue" (threadId 19bd86c9662f7bde).
+- [ ] **NEW: South Mountain Products invoice past due** - Ranta CPA billing (billing@ranta-cpa.com) sent reminder Apr 14. Needs attention.
 - [ ] **Validate pacer-heartbeat** - RCK-163 In Progress. Runs unattended during vacation (April 3–13). Post-vacation: review daily logs for heartbeat entries, confirm cadence gating, check state file, delete old `archimedes-lite-heartbeat` task.
 - [ ] **Seed Open Items on Active Context** - first Notion sync of this task list so Lite can see it (RCK-137)
 - [ ] **Update Lite core prompt** - document how Lite reads/writes Open Items (RCK-138)
