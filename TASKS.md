@@ -14,11 +14,11 @@
 
 - [ ] **URGENT: Send tax docs to CPA (Victor Szmania + Savanna Salas)** - Colin replied Apr 13 ("will work on this first thing tomorrow") but substantive action still pending: gather and send W-2s, 1099s, consulting/investment statements so Victor can file extension + estimate taxes. Savanna still needs Squarespace 2025 revenue confirmation. Thread: "Re: Request for 2025 Revenue" (threadId 19bd86c9662f7bde).
 - [ ] **NEW: South Mountain Products invoice past due** - Ranta CPA billing (billing@ranta-cpa.com) sent reminder Apr 14. Needs attention.
-- [ ] **Validate pacer-heartbeat** - RCK-163 In Progress. Runs unattended during vacation (April 3–13). Post-vacation: review daily logs for heartbeat entries, confirm cadence gating, check state file, delete old `archimedes-lite-heartbeat` task.
+- [ ] **Validate pacer-heartbeat** - RCK-163 In Progress. Heartbeat ran April 3–15, then went silent April 16–20 (6-day gap). Running again April 21. Colin should review: why gap occurred, confirm cadence gating still correct, delete old `archimedes-lite-heartbeat` task.
 - [ ] **Seed Open Items on Active Context** - first Notion sync of this task list so Lite can see it (RCK-137)
 - [ ] **Update Lite core prompt** - document how Lite reads/writes Open Items (RCK-138)
 - [ ] **Ship eBay sales (2)** - Spyderco Kiwi 4 + PNW Loam Dropper Post sold Apr 10. Need packing and shipping. (Liquidation)
-- [ ] **Tesla Service Apr 16** - Model X, Bellevue-20th Street, 7:15 AM. Plan travel (Bellingham → Bellevue).
+- [ ] **NEW: Audit .gitignore + TASKS.md tracking** - RCK-174 (High): audit .gitignore for personalized info leaks. RCK-175 (High, child of 174): run `git rm --cached TASKS.md` to stop tracking it without deleting local file. Both created April 15.
 
 ## Someday
 
@@ -45,7 +45,8 @@
 - [x] **Add heartbeat timestamp to Active Context** - RCK-151, Lite can now check heartbeat health via footer timestamp (2026-03-31)
 - [x] **Lite core prompt v4.1** - added heartbeat awareness to Claude Project + Notion Core Prompt + Notion Agent instructions (2026-03-31)
 - [x] **Colin: upload V4 core prompt** - v4.1 uploaded to Claude Project settings (completed 2026-03-31)
+- [x] **RCK-172: Workflow status conventions** - Done in Linear 2026-04-23. Universal four-state rule landed (not started/active/awaiting/done). PACER artifacts: memory/topics/status-conventions.md, MEMORY.md standing note, AGENTS.md load-on-demand. (auto-moved by heartbeat 2026-04-23)
 
 ---
 
-**Agent sync:** No separate **Open Items** block on Active Context yet (RCK-137). Open Threads + `TASKS.md` remain the paired sources until that ships. **Last sync:** 2026-04-02 (CoWork session — PACER Heartbeat System built + refined, RCK-76 reconciled, pre-vacation wrap).
+**Agent sync:** No separate **Open Items** block on Active Context yet (RCK-137). Open Threads + `TASKS.md` remain the paired sources until that ships. **Last sync:** 2026-04-23 05:07 PDT (heartbeat @daily — RCK-172 auto-moved to Done; Active Context updated to reflect completion).

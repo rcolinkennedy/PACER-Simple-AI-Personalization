@@ -54,6 +54,7 @@ Only pull these when the task actually needs them:
 | `memory/people/[name].md` | Task references a specific person or relationship |
 | `memory/projects/[name].md` | Task references a specific project |
 | `memory/topics/[name].md` | Task references a recurring topic |
+| `memory/topics/status-conventions.md` | Moving any item between statuses in Linear, ClickUp, Notion, or anywhere else with state |
 | `context/[project]/` | Active in-session project work |
 | `skills/[name]/SKILL.md` | Task matches the skill's trigger conditions (see `skills/README.md`) |
 | `skills/editing/SKILL.md` | Revision sessions, draft feedback, or any task where Archie acts as editor. Load alongside the appropriate `user/voice-*.md` for the active writing project. |
