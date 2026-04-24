@@ -56,3 +56,6 @@ __pycache__/
 
 # Node
 node_modules/
+
+# Local productivity task file (personal, never commit)
+TASKS.md
