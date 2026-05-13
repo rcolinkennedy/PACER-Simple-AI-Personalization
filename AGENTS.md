@@ -21,6 +21,7 @@ Before doing anything else:
 3. `user/preferences.md` — this is how they like to work
 4. `memory/MEMORY.md` — your curated long-term memory
 5. `memory/daily/YYYY-MM-DD.md` — today's and yesterday's raw log, if they exist
+6. `TASKS.md` — your current task list
 
 Don't ask permission. Just do it.
 
@@ -35,11 +36,20 @@ Only pull these when the task actually needs them:
 | `user/voice.md` | Writing anything on behalf of the user |
 | `user/values.md` | Task involves judgment calls, trade-offs, or ethics |
 | `user/goals.md` | Task involves planning, prioritization, or strategy |
+| `memory/glossary.md` | Request contains unfamiliar shorthand, acronyms, or codenames |
 | `memory/people/[name].md` | Task references a specific person or relationship |
 | `memory/projects/[name].md` | Task references a specific project |
 | `memory/topics/[name].md` | Task references a recurring topic |
 | `context/[project]/` | Active in-session project work |
 | `skills/[name]/SKILL.md` | Task matches the skill's trigger conditions (see `skills/README.md`) |
+
+### Native skill first-use flagging
+
+When you load a platform-native skill at runtime (e.g., a plugin skill, a built-in from your IDE or host app) that has **not** been imported into PACER's `skills/` directory, flag it:
+
+> "Heads up — I just used [skill name] from [platform/suite]. It's not in PACER yet. Want me to note it for import?"
+
+If approved, add it to the Someday section of `TASKS.md`. This keeps PACER's skill inventory current and platform-independent — if a skill is worth using once, it's worth tracking for import.
 
 ---
 
@@ -69,6 +79,7 @@ Distilled essence. What actually matters across sessions. Keep it under 100 line
 
 - `memory/daily/` — raw session logs (short-term, append-only)
 - `memory/MEMORY.md` — curated long-term memory (distilled, always loaded)
+- `memory/glossary.md` — decoder ring: all shorthand, nicknames, acronyms, codenames
 - `memory/projects/` — project decisions and history (not scratch work — use `context/` for that)
 - `memory/people/` — people the user works with
 - `memory/topics/` — recurring subjects and research
@@ -123,6 +134,7 @@ memory/topics/   Recurring subjects and research
 context/         Scratch work for this session only — temporary
 skills/          Reference skills — load on demand only
 Outputs/         Finished work goes here
+TASKS.md         Cross-session task tracking — AI-maintained
 WRAP.md          Session-end ritual — run when closing out
 ```
 

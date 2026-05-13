@@ -20,10 +20,12 @@ PACER/
 │   └── goals.md
 ├── memory/            ← what the AI remembers (AI-maintained, gitignored)
 │   ├── MEMORY.md      ← curated long-term memory (≤100 lines)
+│   ├── glossary.md    ← shorthand, acronyms, codenames
 │   ├── daily/         ← raw session logs, one per day
 │   ├── projects/
 │   ├── people/
 │   └── topics/
+├── TASKS.md           ← cross-session task tracking (AI-maintained, gitignored)
 ├── context/           ← scratch work (session-scoped, gitignored)
 ├── skills/            ← reference skills, loaded on demand
 └── Outputs/           ← finished work (gitignored)
@@ -52,7 +54,7 @@ git clone https://github.com/rcolinkennedy/PACER-Simple-AI-Personalization.git
 cd PACER-Simple-AI-Personalization
 ```
 
-Open the folder in your AI tool (CoWork, Cursor, Windsurf, or anything that reads local files). The AI reads `AGENTS.md`, finds `BOOTSTRAP.md`, and runs first-time setup. This is mandatory — bootstrap interviews you, generates the `user/` and `memory/` files the system needs, then deletes itself.
+Open the folder in your AI tool (CoWork, Cursor, Windsurf, or anything that reads local files). Before first run, review `BOOTSTRAP.md` — you can customize the AI's name, your profile defaults, or the conversation's focus before it kicks off. Then let the AI read `AGENTS.md` and run bootstrap. This is mandatory — it interviews you, generates the `user/` and `memory/` files the system needs, then deletes itself.
 
 After that, just use it. The AI loads your context at session start and captures memory at session end.
 
@@ -78,6 +80,12 @@ After that, just use it. The AI loads your context at session start and captures
 > "what did you learn?"   # → review: shows draft first, you approve
 ```
 
+**How wrap works**
+
+When a session ends, `WRAP.md` tells the AI what to capture: a distilled daily log entry, task list updates (completions, new items, status changes), long-term memory updates if something significant happened, and entity file updates for projects, people, or topics that moved forward. It also flags any suggested changes to `user/` files — but never writes them without your approval.
+
+The only thing the user needs to do is signal the end of the session. Say "we're done" for auto mode (the AI just saves everything) or "what did you learn?" for review mode (the AI shows you a draft and waits for your OK before writing). Everything else is handled by the AI.
+
 **Going mobile with PACER-Lite**
 
 Compress your identity and active context into a cloud layer (e.g. three Notion pages), write a static instruction file for a Claude Project or Notion Agent, and connect via MCP. See the [PACER-Lite writeup](https://www.notion.so/rcolinkennedy/PACER-Lite-Making-a-Personalized-AI-System-Portable-32dc1a400ce680429589fca6031c15d5) for details.
@@ -88,7 +96,8 @@ Compress your identity and active context into a cloud layer (e.g. three Notion 
 |------|-------------|
 | `AGENTS.md` | Master instruction file. The only file the AI needs to find everything else. |
 | `BOOTSTRAP.md` | First-run setup. Interviews user, generates system files, self-deletes. Required. |
-| `WRAP.md` | Session-end ritual. Captures daily log, updates memory, flags suggestions. |
+| `WRAP.md` | Session-end ritual. Captures daily log, updates tasks and memory, flags suggestions. |
+| `TASKS.md` | Cross-session task tracking. AI-maintained — updated during wrap. |
 | `CLAUDE.md` | One-line redirector for Claude-based tools. Add similar for other platforms. |
 | `skills/` | Reference skills from [Agent Skills for Context Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering). Loaded on demand. |
 

@@ -32,14 +32,20 @@ Review mode is useful when the session covered something nuanced, sensitive, or 
 
 1. **Append to `memory/daily/YYYY-MM-DD.md`** — write a short summary of what happened. Decisions made, things learned, context worth having next session. Distill, don't transcribe.
 
-2. **Update `memory/MEMORY.md`** — only if something genuinely significant happened. New standing facts, changed context, important decisions. Leave it alone if nothing warrants it.
+2. **Update `TASKS.md`** — review the session for task changes:
+   - Mark completed items done (move to Done with date)
+   - Add new items surfaced during the session (commitments, follow-ups, action items)
+   - Move items between sections if status changed (e.g., Active → Waiting On)
+   - Add items to Next Session for anything that should be picked up immediately next time
 
-3. **Update entity files if relevant:**
+3. **Update `memory/MEMORY.md`** — only if something genuinely significant happened. New standing facts, changed context, important decisions. Leave it alone if nothing warrants it.
+
+4. **Update entity files if relevant:**
    - `memory/projects/[name].md` — if a project moved forward
    - `memory/people/[name].md` — if something notable about a person came up
    - `memory/topics/[name].md` — if a topic deepened
 
-4. **Flag `user/` suggestions** — if anything suggests a `user/` file should be updated (new voice example, changed preference, updated goal), say so. Don't write — propose.
+5. **Flag `user/` suggestions** — if anything suggests a `user/` file should be updated (new voice example, changed preference, updated goal), say so. Don't write — propose.
 
 ---
 
@@ -49,6 +55,9 @@ Present a draft before writing anything. Format it clearly:
 
 **What I'd add to today's daily log:**
 > [proposed entry]
+
+**Task changes:**
+> [completions, new items, moves — or "no changes"]
 
 **What I'd update in MEMORY.md (if anything):**
 > [proposed change, or "nothing this session"]
