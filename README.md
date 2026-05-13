@@ -1,11 +1,15 @@
 # PACER
 
-A file-based memory and context system that gives any AI assistant persistent memory and a consistent identity across tools and sessions.
+**Personalized AI Context Engineering Repository** — a file-based memory and context system that gives any AI assistant persistent memory and a consistent identity across tools and sessions.
+
+PACER is for people who use AI regularly and want personalization without standing up a custom agentic system. Plain markdown files, no code, no database, no package — the maintenance stays on the AI tool providers; you just keep the files.
+
+It's not a deep agentic framework like [OpenClaw](https://github.com/openclaw/openclaw) or [Hermes](https://github.com/hermes-agi/hermes). Those give you autonomous tool-using agents. PACER gives you personalization and memory, with no maintenance headaches or runaway costs.
 
 ```
 PACER/
 ├── AGENTS.md          ← the one file every AI reads at startup
-├── BOOTSTRAP.md       ← first-run conversation to set up identity
+├── BOOTSTRAP.md       ← first-run setup (interviews user, generates system files, self-deletes)
 ├── WRAP.md            ← session-end ritual for capturing memory
 ├── user/              ← who you are (human-maintained, gitignored)
 │   ├── AI-PERSONA.md
@@ -25,15 +29,21 @@ PACER/
 └── Outputs/           ← finished work (gitignored)
 ```
 
+## What it looks like
+
+PACER is for everyday work, wherever that happens. Claude on your phone, ChatGPT on your desktop, Cursor in your editor — the AI knows who you are, how you work, and what happened yesterday across all of them.
+
+**Session 1** — Clone the repo, open it in your AI tool, and bootstrap runs. The AI interviews you — who you are, what you do, how you like to work — then generates your identity files and sets up the memory system. Ten minutes, once.
+
+**Session 10** — You open a new conversation. The AI already knows your name, your role, your communication style, your active projects, and last week's decisions. No preamble. It picks up where you left off.
+
 ## Why this
 
-Every AI conversation starts from zero. PACER fixes that with plain markdown files — no database, no vendor lock-in, no code.
-
 - **Platform-independent.** One instruction file (`AGENTS.md`) works with Claude, GPT, Gemini, or anything that reads files. Add a one-line redirector for your tool (`CLAUDE.md`, etc.).
-- **Your data stays yours.** All personal files are gitignored. The repo is scaffolding — clone it, fill it in, and nothing personal ever touches GitHub.
-- **Two-tier memory.** Raw daily logs for everything that happened, a curated long-term memory file (≤100 lines) for what actually matters. The AI maintains both.
-- **Hybrid loading.** Identity and preferences load every session. Voice, values, goals, entity files, and skills load on demand — keeps token costs low.
-- **Goes mobile.** PACER-Lite compresses the system into a cloud-based context layer (Notion, etc.) for use from any device. Same identity, same memory, different surface.
+- **Your data stays yours.** All personal files are gitignored. The repo is scaffolding — clone it, fill it in, nothing personal touches GitHub.
+- **Two-tier memory.** Raw daily logs plus a curated long-term memory file (≤100 lines). The AI maintains both.
+- **Hybrid loading.** Identity and preferences load every session. Voice, values, goals, and skills load on demand — keeps token costs low.
+- **Goes mobile.** PACER-Lite compresses the system into a cloud layer (Notion, etc.) for use from any device. Same identity, same memory, different surface.
 
 ## Get started
 
@@ -42,19 +52,19 @@ git clone https://github.com/rcolinkennedy/PACER-Simple-AI-Personalization.git
 cd PACER-Simple-AI-Personalization
 ```
 
-Open the folder in your AI tool (CoWork, Cursor, Windsurf, or anything that reads local files). The AI reads `AGENTS.md`, finds `BOOTSTRAP.md`, and starts a conversation to learn who you are and set up your identity files.
+Open the folder in your AI tool (CoWork, Cursor, Windsurf, or anything that reads local files). The AI reads `AGENTS.md`, finds `BOOTSTRAP.md`, and runs first-time setup. This is mandatory — bootstrap interviews you, generates the `user/` and `memory/` files the system needs, then deletes itself.
 
-After bootstrap, just use it. The AI loads your context at session start and captures memory at session end (triggered by saying "we're done" or "wrap up").
+After that, just use it. The AI loads your context at session start and captures memory at session end.
 
 ## Usage
 
-**First run**
+**First run (bootstrap)**
 
 ```
-# AI reads BOOTSTRAP.md automatically and starts a conversation:
+# AI reads BOOTSTRAP.md and runs first-time setup:
 # "Hey. I just came online. Who am I? Who are you?"
-# Together you fill in user/AI-PERSONA.md, user/PROFILE.md, etc.
-# Bootstrap deletes itself when done.
+# Interviews you, generates user/ and memory/ files.
+# Bootstrap deletes itself when done. The system is ready.
 ```
 
 **Every session after**
@@ -64,27 +74,27 @@ After bootstrap, just use it. The AI loads your context at session start and cap
 # Work normally. The AI knows who you are.
 
 # Session end:
-> "we're done"            # → auto mode: AI saves daily log + updates memory
-> "what did you learn?"   # → review mode: AI shows draft first, you approve
+> "we're done"            # → auto: saves daily log + updates memory
+> "what did you learn?"   # → review: shows draft first, you approve
 ```
 
 **Going mobile with PACER-Lite**
 
-Compress your identity and active context into a cloud layer (e.g. three Notion pages), write a static instruction file for a Claude Project or Notion Agent, and connect via MCP. The portable system syncs back to the full system through structured handoff entries. See the [PACER-Lite writeup](https://www.notion.so/rcolinkennedy/PACER-Lite-Making-a-Personalized-AI-System-Portable-32dc1a400ce680429589fca6031c15d5) for details.
+Compress your identity and active context into a cloud layer (e.g. three Notion pages), write a static instruction file for a Claude Project or Notion Agent, and connect via MCP. See the [PACER-Lite writeup](https://www.notion.so/rcolinkennedy/PACER-Lite-Making-a-Personalized-AI-System-Portable-32dc1a400ce680429589fca6031c15d5) for details.
 
 ## Key files
 
 | File | What it does |
 |------|-------------|
 | `AGENTS.md` | Master instruction file. The only file the AI needs to find everything else. |
-| `BOOTSTRAP.md` | First-run setup. Guides the identity conversation, then self-deletes. |
+| `BOOTSTRAP.md` | First-run setup. Interviews user, generates system files, self-deletes. Required. |
 | `WRAP.md` | Session-end ritual. Captures daily log, updates memory, flags suggestions. |
-| `CLAUDE.md` | One-line redirector for Claude-based tools. Add similar files for other platforms. |
+| `CLAUDE.md` | One-line redirector for Claude-based tools. Add similar for other platforms. |
 | `skills/` | Reference skills from [Agent Skills for Context Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering). Loaded on demand. |
 
 ## Related
 
-- [Agent Skills for Context Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) — memory systems and filesystem context skills this builds on
+- [Agent Skills for Context Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) — memory systems and context skills this builds on
 - [OpenClaw](https://github.com/openclaw/openclaw) — session management patterns adapted here
 - [Personalized AI: PACER](https://www.notion.so/rcolinkennedy/Personalized-AI-PACER-32cc1a400ce680408e3ae68150ffe6b9) — original writeup
 - [PACER-Lite](https://www.notion.so/rcolinkennedy/PACER-Lite-Making-a-Personalized-AI-System-Portable-32dc1a400ce680429589fca6031c15d5) — making it portable
