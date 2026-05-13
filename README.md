@@ -9,7 +9,7 @@ It's not a deep agentic framework like [OpenClaw](https://github.com/openclaw/op
 ```
 PACER/
 ├── AGENTS.md          ← the one file every AI reads at startup
-├── BOOTSTRAP.md       ← first-run setup (interviews user, generates system files, self-deletes)
+├── BOOTSTRAP.md       ← first-run setup that self-deletes (interviews user, generates system files)
 ├── WRAP.md            ← session-end ritual for capturing memory
 ├── user/              ← who you are (human-maintained, gitignored)
 │   ├── AI-PERSONA.md
