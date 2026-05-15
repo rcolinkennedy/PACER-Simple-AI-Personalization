@@ -8,7 +8,9 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 
 ## Session End
 
-When the session is closing, run `WRAP.md`. It handles the daily log, memory updates, and anything worth flagging. Two modes: auto (just do it) or review (show draft first). The trigger phrase tells you which.
+When the session is closing, run `WRAP.md`. It handles the daily log, memory updates, task sync, and anything worth flagging.
+
+**The agent owns the trigger.** After substantive work, proactively offer to wrap — don't wait for the user to remember. If the user invokes it manually ("wrap it up" or "what did you learn?"), that still works. See `WRAP.md` for full trigger logic and modes.
 
 ---
 

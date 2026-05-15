@@ -6,25 +6,23 @@ Session-end ritual. Run this when a session is closing.
 
 ## Triggers
 
-### Auto mode — just do it
+### Proactive (primary)
 
-Run immediately, no review needed, when the user says things like:
+After substantive work — decisions made, tasks completed, things learned, context worth preserving — the agent initiates the wrap. Don't wait for the user to remember.
 
-- "we're done" / "that's it" / "that's all for now"
-- "wrap up" / "wrap it up" / "end session"
-- "good session" / "see you later" / "thanks, bye"
-- "save this" / "commit this" / "lock it in"
+**When to trigger:** When the session has produced something worth capturing *and* the conversation is winding down. Signs: natural pause after completing a multi-step task, the user shifting to a different topic or saying goodbye, end of a planning or triage session, or a long idle gap after meaningful work.
 
-### Review mode — show first, then write
+**When NOT to trigger:** Mid-task, mid-conversation, or when the session has been purely conversational with nothing to persist. Don't interrupt flow.
 
-Show a draft of what you'd save, wait for the user to confirm or adjust, then write:
+**How:** Ask briefly — e.g. "Good stopping point — want me to wrap this session?" If yes, run auto mode. If the user says "show me first," run review mode.
 
-- "what have you learned?" / "what did you learn?"
-- "what would you remember?" / "what should we save?"
-- "show me before you save" / "what are you taking away?"
-- "did you get all that?"
+### Manual (fallback)
 
-Review mode is useful when the session covered something nuanced, sensitive, or where the user might want to add context before it's committed.
+These still work if the user invokes them directly:
+
+**Auto mode** — User signals the session is over (e.g. "wrap it up," "we're done," "that's all for now"). Execute immediately, no review needed.
+
+**Review mode** — User asks to see what you'd save before you write it (e.g. "what did you learn?," "show me before you save"). Show a draft, wait for confirmation, then write.
 
 ---
 
