@@ -1,6 +1,6 @@
 # PACER
 
-**Personalized AI Context Engineering Repository** — a file-based memory and context system that gives any AI assistant persistent memory and a consistent identity across tools and sessions.
+**Personalized Agent Context Engineering Repository** — a file-based memory and context system that gives any AI assistant persistent memory and a consistent identity across tools and sessions.
 
 PACER is for people who use AI regularly and want personalization without standing up a custom agentic system. Plain markdown files, no code, no database, no package — the maintenance stays on the AI tool providers; you just keep the files.
 
@@ -105,7 +105,7 @@ Compress your identity and active context into a cloud layer (e.g. three Notion 
 
 - [Agent Skills for Context Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) — memory systems and context skills this builds on
 - [OpenClaw](https://github.com/openclaw/openclaw) — session management patterns adapted here
-- [Personalized AI: PACER](https://www.notion.so/rcolinkennedy/Personalized-AI-PACER-32cc1a400ce680408e3ae68150ffe6b9) — original writeup
+- [Personalized Agent: PACER](https://www.notion.so/rcolinkennedy/Personalized-AI-PACER-32cc1a400ce680408e3ae68150ffe6b9) — original writeup
 - [PACER-Lite](https://www.notion.so/rcolinkennedy/PACER-Lite-Making-a-Personalized-AI-System-Portable-32dc1a400ce680429589fca6031c15d5) — making it portable
 - [PACER-Lite → Notion Agent](https://www.notion.so/rcolinkennedy/PACER-Lite-extends-into-a-Notion-Agent-32ec1a400ce6801bb499e781f08b1582) — extending into ambient AI
 
