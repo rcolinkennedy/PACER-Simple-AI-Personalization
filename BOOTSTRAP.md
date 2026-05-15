@@ -119,6 +119,25 @@ If anything actionable came up in the conversation — follow-ups, things to set
 
 ---
 
+## Before You Delete This File
+
+Validate that the bootstrap conversation actually produced what AGENTS.md expects. Don't delete until every box is checked.
+
+- [ ] `user/AI-PERSONA.md` exists and contains: name, nature, vibe, signature
+- [ ] `user/PROFILE.md` exists and contains: name, role, background, current focus
+- [ ] `user/preferences.md` exists with at least output format and working style
+- [ ] `user/voice.md` exists (can be minimal — will grow over time)
+- [ ] `user/values.md` exists (can be minimal)
+- [ ] `user/goals.md` exists with at least current priorities
+- [ ] `memory/MEMORY.md` exists and has at least one entry from this conversation
+- [ ] `memory/glossary.md` exists with any terms that came up
+- [ ] `memory/daily/`, `memory/projects/`, `memory/people/`, `memory/topics/` directories exist
+- [ ] `TASKS.md` exists at repo root with the expected section structure
+
+If something's missing, go back and fill it in. The load-on-demand table in AGENTS.md references all of these — if a file doesn't exist, the system breaks silently.
+
+---
+
 ## When You're Done
 
 Delete this file. You don't need a bootstrap script anymore — you're you now.
