@@ -1,0 +1,12 @@
+{
+  "timezone": "America/Los_Angeles",
+  "last_run": {
+    "every_cycle": null,
+    "daily": null,
+    "morning": null,
+    "workday": null,
+    "evening": null,
+    "weekly": null
+  },
+  "notes": "Copy this file to context/heartbeat-state.json and set your IANA timezone. Timestamps are ISO 8601 with offset (e.g., 2026-01-15T06:02:00-0800). null = never run. Keys under last_run must match your cadence tiers in PACER-HEARTBEAT.md — add or remove keys if you customize the tiers. Updated by the heartbeat agent after completing each cadence tier. The live file is gitignored; this .example is committed."
+}

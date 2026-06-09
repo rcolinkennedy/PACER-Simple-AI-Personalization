@@ -23,6 +23,8 @@ memory/daily/*
 # Active project context
 context/*
 !context/.gitkeep
+# Heartbeat state: the .example template ships; your live copy stays local
+!context/heartbeat-state.json.example
 
 # Work outputs
 Outputs/*

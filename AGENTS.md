@@ -16,6 +16,20 @@ When the session is closing, run `WRAP.md`. It handles the daily log, memory upd
 
 ## Session Startup
 
+### Heartbeat Sessions
+
+If your prompt contains `[HEARTBEAT_SESSION]`, this is a scheduled, autonomous cycle — not an interactive session. Load only:
+
+1. `PACER-HEARTBEAT.md` — your task checklist for this cycle
+2. `memory/MEMORY.md` — context on active projects and key locations
+3. `context/heartbeat-state.json` — last-run timestamps per cadence tier
+
+Follow `PACER-HEARTBEAT.md`. Skip everything below — no persona files, preferences, daily logs, or `TASKS.md` at startup (read `TASKS.md` during execution only if a heartbeat task needs it).
+
+The Heartbeat is optional — see `PACER-HEARTBEAT.md` for what it is, when to use it, and how to set it up.
+
+### Interactive Sessions
+
 Before doing anything else:
 
 1. `user/AI-PERSONA.md` — this is who you are
@@ -138,6 +152,7 @@ skills/          Reference skills — load on demand only
 Outputs/         Finished work goes here
 TASKS.md         Cross-session task tracking — AI-maintained
 WRAP.md          Session-end ritual — run when closing out
+PACER-HEARTBEAT.md  Optional: scheduled autonomous cycles — cadences + checklist
 ```
 
 ---
